@@ -1,4 +1,4 @@
-module github.com/ropnop/go-clr
+module github.com/r1k0t3k1/go-clr
 
 go 1.13
 
