@@ -34,7 +34,7 @@ type SafeArrayBound struct {
 // by making two syscalls and copying raw memory into the correct spot.
 func CreateSafeArray(rawBytes []byte) (unsafe.Pointer, error) {
 
-	saPtr, err := CreateEmptySafeArray(0x11, len(rawBytes)) // VT_UI1
+	saPtr, err := CreateEmptySafeArray(0x17, len(rawBytes)) // VT_VARIANT
 	if err != nil {
 		return nil, err
 	}
